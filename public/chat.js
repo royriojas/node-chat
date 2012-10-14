@@ -3,8 +3,8 @@
   window.Chat = {
     socket : null,
   
-    initialize : function() {
-      this.socket = io.connect('http://localhost');
+    initialize : function(socketURL) {
+      this.socket = io.connect(socketURL);
 
       //Send message on button click or enter
       $('#send').click(function() {

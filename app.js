@@ -4,7 +4,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var archive = require(__dirname + '/archive.js');
 
-server.listen(80);
+server.listen(process.env.PORT);
 
 app.use("/", express.static(__dirname + '/public'));
 

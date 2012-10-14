@@ -4,22 +4,13 @@ module.exports = {
   limit : 100,
   
   get : function(callback) {
-    var chat = this;
-
-    this.fs.exists(this._file, function (exists) {
-      if(exists) {
-        chat.fs.readFile(chat._file, 'utf8', function(error, data) {
-          if(error === null) {
-            callback(null, JSON.parse(data));
-          } else {
-            callback(error, null);
-          }
-        });
+    this.fs.readFile(this._file, 'utf8', function(error, data) {
+      if(error === null) {
+        callback(null, JSON.parse(data));
       } else {
-        callback(null, []);
+        callback(error, null);
       }
     });
-    
   },
 
   add : function(data, callback) {
