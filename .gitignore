@@ -4,5 +4,9 @@ node_modules
 # DS Store
 .DS_Store
 
-# License file
+#License file
 LICENSE-MIT
+
+#c9revisions
+.c9revisions
+.c9save
