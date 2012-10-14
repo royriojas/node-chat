@@ -1,0 +1,2 @@
+{"ts":1350175068503,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"[{\"name\":\"tester\",\"msg\":\"testing!\\n\"},{\"name\":\"another tester\",\"msg\":\"testing over here!\\n\"}]"]],"start1":0,"start2":0,"length1":0,"length2":93}]],"length":93}
+{"contributors":[],"silentsave":false,"ts":1350175619617,"patch":[[{"diffs":[[0,"["],[-1,"{\"name\":\"tester\",\"msg\":\"testing!\\n\"},{\"name\":\"another tester\",\"msg\":\"testing over here!\\n\"}"],[0,"]"]],"start1":0,"start2":0,"length1":93,"length2":2}]],"length":2,"saved":false}

@@ -20,20 +20,7 @@
     </div>
     <script type="text/javascript">
       $(document).ready(function() {
-        Chat.initialize();
-
-        //Read in the archive
-        $.ajax({
-          url: '/archive',
-          dataType: 'json',
-          success: function(data) {
-            if(!data.error) {
-              for(var m = 0; m < data.length; m++) {
-                Chat.add(data[m], true);
-              }
-            }
-          }
-        });
+        Chat.initialize('http://node-chat.busyrich.c9.io/');
       });
     </script>
   </body>
