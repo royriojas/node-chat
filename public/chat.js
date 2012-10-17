@@ -14,6 +14,7 @@
       $('#message').keyup(function(evt) {
         if ((evt.keyCode || evt.which) == 13) {
           Chat.send();
+          return false;
         }
       });
 
@@ -22,17 +23,11 @@
     },
 
     //Adds a new message to the chat.
-    add : function(data, old) {
-      old = old || false;
-
+    add : function(data) {
       var name = data.name || 'anonymous';
       var msg = $('<div class="msg"></div>')
         .append('<span class="name">' + name + '</span>: ')
         .append('<span class="text">' + data.msg + '</span>');
-
-      if(old) {
-        msg.addClass('old');
-      }
 
       $('#messages')
         .append(msg)
